@@ -103,8 +103,9 @@ variable "vsphere_resource_pool" {
 # SSH KEY Information
 variable "icp_private_ssh_key" {
   type    = "string"
-  default = ""
+default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC59R2Q7w7Lji9h/CUG0ZTb8vT8pMCVMm2zDHUd2xISpq1yKkTO8iAmje4SNr2OnJ5gHF46RuoXkBFq22NRRLp3KAN5WFhlotq1q1QViwzYHOC1bVn5ELYO22YzvIjH0qFon9JPXLgalGOl+DWhHsPoTcgMlBYmfyJMEQ+0qd41xRfBq4ARGi3tQj71RgmHTU9lxfxtBcrWK+nvuRoevOh9comeqmr/Jj0qIhXriH/iQlsqwhl32VBa5+9Qxb9iTSp4zTz9ggFnRGvkYaE6aqjJL6IPBwTwsrJsyxqXc4/yLbpwjNED6hF07SUbo9iN5nV3dYHwfkvrB0gNeZ/GWyTi0MFoGZtOTf7WcFq06WXoE3Ar4CPTviitFl3Zm3pL/WRHmQ/mCrRCuVs08rxKNvEwSHp71R57zHZt+776rGOrhIoAO64y5jPn0fMw6eh7nIe2mKHMRjLw+wJ5zG96YJgiG2JaWn4PwcjlFQU5d4dPzb4ssYCFv7BSqKsKeHOce/6ReuMaEGY3Tk+jBBBWs9BX1YrEO0pzmAq4/EtuguYDfpF89wcLsYUpMXyPQwOO76MwV8Mt7RK+lwteKog0R1b0TyV6U0blYBsfzlh/WRUZ/dS66lWj0BjeIj0/hnPdhizvfTBipHxBvDked+UYC2DjdqVjZH+e89yJozw4YnRgrw== root@icpcam.iccmpl.demo"
 }
+
 
 variable "icp_public_ssh_key" {
   type    = "string"
@@ -141,12 +142,12 @@ variable "download_user_password" {
 # ICP Settings
 variable "enable_kibana" {
   type    = "string"
-  default = "true"
+  default = "false"
 }
 
 variable "enable_metering" {
   type    = "string"
-  default = "true"
+  default = "false"
 }
 
 variable "icp_cluster_name" {
@@ -180,7 +181,7 @@ variable "enable_single_node" {
 
 variable "enable_vm_va" {
   type    = "string"
-  default = "true"
+  default = "false"
 }
 
 variable "enable_vm_management" {
